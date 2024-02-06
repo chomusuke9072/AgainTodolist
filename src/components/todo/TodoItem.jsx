@@ -1,3 +1,5 @@
+import { TodoCardItem } from "../style/TodoStyle";
+
 function TodoItem({ todo, onDeleteTodoItem, onToggleTodoItem }) {
   const { id, title, content, isDone, deadline } = todo;
 
@@ -8,7 +10,7 @@ function TodoItem({ todo, onDeleteTodoItem, onToggleTodoItem }) {
   });
 
   return (
-    <li className="todo-card-item">
+    <TodoCardItem $isDone={isDone}>
       <article>
         <h3>{title}</h3>
         <p>{content}</p>
@@ -20,7 +22,7 @@ function TodoItem({ todo, onDeleteTodoItem, onToggleTodoItem }) {
           </button>
         </div>
       </article>
-    </li>
+    </TodoCardItem>
   );
 }
 

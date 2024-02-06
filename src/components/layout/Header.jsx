@@ -1,9 +1,11 @@
+import { TodoHeader } from "../style/TodoStyle";
+
 function Header() {
   return (
-    <header className="todo-header">
+    <TodoHeader>
       <h1>My todo list</h1>
       <h1>React</h1>
-    </header>
+    </TodoHeader>
   );
 }
 
