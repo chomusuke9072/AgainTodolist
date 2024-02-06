@@ -1,13 +1,9 @@
-import Header from "./components/layout/Header";
-import GlobalStyle from "./components/style/GlobalStyle";
-import TodoController from "./components/todo/TodoController";
+import Router from "./shared/Router";
 
 function App() {
   return (
     <>
-      <GlobalStyle />
-      <Header />
-      <TodoController />
+      <Router />
     </>
   );
 }
